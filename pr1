@@ -1,0 +1,4 @@
+const resp = pm.response.json();
+token = 'Bearer ' + resp.access_token;
+pm.environment.set('tblToken', token);
+pm.collectionVariables.set('tblToken', token);
